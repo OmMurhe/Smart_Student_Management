@@ -12,11 +12,13 @@ import { FaCheck } from "react-icons/fa6";
 import { MdOutlineDateRange } from "react-icons/md";
 import { MdLanguage } from "react-icons/md";
 import { FaRupeeSign } from "react-icons/fa";
+import Laptop from '../../image/laptop.png'
 
 const WebDevelopement = () => {
   return (
     <>
-      <div className='bg-gradient-to-r from-[#2d1db8] to-[#6c3cff] w-full h-80 flex flex-col'>
+    <div className='bg-gradient-to-r from-[#2d1db8] to-[#6c3cff] w-full h-90 flex flex-row'>
+      <div className=' flex flex-col w-[55%]'>
         <div className='flex text-white text-sm gap-4 ml-24 font-semibold mt-5 '>
           <span className='mt-1'><FaHouse /></span>
           <a>Home</a>
@@ -30,7 +32,7 @@ const WebDevelopement = () => {
           <div className='ml-5 flex flex-col gap-3'>
             <div className='w-20 border-1 border-amber-400 h-6 flex justify-center items-center mt-5 rounded-lg bg-[#7462FF] font-bold text-xs text-yellow-400 '>Bestseller</div>
             <h1 className='text-white font-bold   text-3xl'>Web Developement </h1>
-            <p className=' mt-1 text-white'>HTML,CSS,JavaScript,React -build modern,<br />responsive websites from scratch.</p>
+            <p className=' mt-1 text-white'>Design beautiful interfaces and seamless user experiences. Master Figma, Adobe XD, and Design Thinking from scratch.</p>
             <div className=' flex flex-row gap-5'>
               <span className='flex gap-2 text-white'><FaRegStar className='text-yellow-400 mt-1' /><p>4.8</p></span>
               <div className="h-5 w-[1px] bg-white/30 mt-1"></div>
@@ -43,9 +45,16 @@ const WebDevelopement = () => {
             <button className='px-2 py-2  w-40 bg-yellow-400 rounded-xl mt-4'>Enroll Now →</button>
           </div>
         </div>
+        
+      </div>
+      <div className=' w-1/2 flex ml-20 items-end relative  z-0'>
+                <div className='h-[320px] w-[320px] rounded-full bg-amber-400  absolute left-53'>  </div>
+                <img src={Laptop} alt='Girl' className='h-[370px] z-10 absolute right-24 top-2 ' />
+                </div>
+      
       </div>
 
-      <div className='w-full flex mt-5 px-24 py-5  gap-5 '>
+      <div className='w-full flex mt-5 px-24 py-5  gap-5 z-10 '>
         <div className='w-2/3 shadow-[0_4px_20px_rgba(0,0,0,0.20)] p-6 rounded-2xl '>
           <p className='font-bold text-lg '>About This Course</p>
           <p className='mt-3'> This comprehensive Web Development course is designed for beginners as well as those <br /> looking  to enhance their skills. You will learn to build beautiful, responsive, and functional <br />websites using the latest technologies.</p>

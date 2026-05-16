@@ -68,7 +68,7 @@ const Course = () => {
 
           <div className='flex justify-between items-center'>
             <div className='h-10 w-10 flex justify-center items-center bg-[#3CBF8B] rounded-lg '><LuSmartphone className=' font-bold text-3xl' /></div>
-            <span className='text-sm font-bold '>5Month</span>
+            <span className='text-sm font-bold hover:underline 'onClick={()=>navigate('/course/appDevelopement')}>View Details</span>
           </div>
           <div className='px-3 py-1 inline-block  mt-5 rounded-full bg-[#3CBF8B] font-bold text-sm '>Populer</div>
           <h1 className=' font-bold mt-4 text-lg '>App Developement</h1>
@@ -84,7 +84,7 @@ const Course = () => {
           {/*Card 3*/}
           <div className='flex justify-between items-center'>
             <div className='h-10 w-10 flex justify-center items-center bg-[#F27D4A] rounded-lg '><BiBarChartAlt2 className=' font-bold text-3xl' /></div>
-            <span className='text-sm font-bold '>5Month</span>
+             <span className='text-sm font-bold hover:underline 'onClick={()=>navigate('/course/dataScience')}>View Details</span>
           </div>
           <div className='px-3 py-1 inline-block  mt-5 rounded-full bg-[#F27D4A] font-bold text-sm '>Top Rated</div>
           <h1 className=' font-bold mt-4 text-lg '>Data Science</h1>
@@ -100,7 +100,7 @@ const Course = () => {
           {/*Card 4*/}
           <div className='flex justify-between items-center'>
             <div className='h-10 w-10 flex justify-center items-center bg-[#D66EB1] rounded-lg '><LuPalette className=' font-bold text-3xl' /></div>
-            <span className='text-sm font-bold '>5Month</span>
+             <span className='text-sm font-bold hover:underline 'onClick={()=>navigate('/course/uiUxDesign')}>View Details</span>
           </div>
           <div className='px-3 py-1 inline-block  mt-5 rounded-full bg-[#D66EB1] font-bold text-sm '>Threading</div>
           <h1 className=' font-bold mt-4 text-lg '>UI/UX Design</h1>
@@ -121,7 +121,7 @@ const Course = () => {
         <div className='bg-[#D9A629] w-80  rounded-2xl p-5 text-white'>
           <div className='flex justify-between items-center'>
             <div className='h-10 w-10 flex justify-center items-center bg-[#EBC053] rounded-lg '><LuMegaphone className=' font-bold text-3xl' /></div>
-            <span className='text-sm font-bold '>5Month</span>
+           <span className='text-sm font-bold hover:underline 'onClick={()=>navigate('/course/digitalMarketing')}>View Details</span>
           </div>
           <div className='px-3 py-1 inline-block  mt-5 rounded-full bg-[#EBC053] font-bold text-sm '>New</div>
           <h1 className=' font-bold mt-4 text-lg '>Digital Marketing</h1>
@@ -136,7 +136,7 @@ const Course = () => {
         <div className='bg-[#2E8BC7] w-80  rounded-2xl p-5 text-white'>
           <div className='flex justify-between items-center'>
             <div className='h-10 w-10 flex justify-center items-center bg-[#4AA3D9] rounded-lg '><LuShieldCheck className=' font-bold text-3xl' /></div>
-            <span className='text-sm font-bold '>5Month</span>
+             <span className='text-sm font-bold hover:underline 'onClick={()=>navigate('/course/cyberSecurity')}>View Details</span>
           </div>
           <div className='px-3 py-1 inline-block  mt-5 rounded-full bg-[#4AA3D9] font-bold text-sm '>Hot</div>
           <h1 className=' font-bold mt-4 text-lg '>Cyber Security</h1>
@@ -152,7 +152,7 @@ const Course = () => {
         <div className='bg-[#0D4E81] w-80  rounded-2xl p-5 text-white'>
           <div className='flex justify-between items-center'>
             <div className='h-10 w-10 flex justify-center items-center bg-[#1A5F96] rounded-lg '><LuBrainCircuit className=' font-bold text-3xl' /></div>
-            <span className='text-sm font-bold '>5Month</span>
+            <span className='text-sm font-bold hover:underline 'onClick={()=>navigate('/course/artificialIntelligence')}>View Details</span>
           </div>
           <div className='px-3 py-1 inline-block  mt-5 rounded-full bg-[#1A5F96] font-bold text-sm '>New Launch</div>
           <h1 className=' font-bold mt-4 text-lg '>Artificial Intelligence</h1>
@@ -168,7 +168,7 @@ const Course = () => {
         <div className='bg-[#6A1B9A] w-80  rounded-2xl p-5 text-white'>
           <div className='flex justify-between items-center'>
             <div className='h-10 w-10 flex justify-center items-center bg-[#7E31B1] rounded-lg '><LuDatabase className=' font-bold text-3xl' /></div>
-            <span className='text-sm font-bold '>5Month</span>
+             <span className='text-sm font-bold hover:underline 'onClick={()=>navigate('/course/cloudComputing')}>View Details</span>
           </div>
           <div className='px-3 py-1 inline-block  mt-5 rounded-full bg-[#7E31B1] font-bold text-sm '>Hot</div>
           <h1 className=' font-bold mt-4 text-lg '>Cloud Computing</h1>
