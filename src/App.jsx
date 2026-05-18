@@ -14,6 +14,8 @@ import DigitalMarketing from './assets/components/course/digitalMarketing'
 import CyberSecurity from './assets/components/course/cyberSecurity'
 import ArtificialIntelligence from './assets/components/course/artificialIntelligence'
 import CloudComputing from './assets/components/course/cloudComputing'
+import Home from './assets/components/home/Home'
+import SuccessStrories from './assets/components/successStories/successStrories'
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,6 +23,8 @@ const App = () => {
     <Routes>
       
       <Route path='/course' element={<Course/>}/>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/successStories' element={<SuccessStrories/>}/>
       <Route path='/course/cloudComputing' element={<CloudComputing/>}/>
       <Route path='/course/artificialIntelligence' element={<ArtificialIntelligence/>}/>
       <Route path='/course/cyberSecurity' element={<CyberSecurity/>}/>

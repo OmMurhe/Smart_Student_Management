@@ -4,7 +4,7 @@ import { FaGraduationCap,FaArrowRight } from "react-icons/fa";
 import { HiCodeBracket } from "react-icons/hi2";
 import { BiBarChartAlt2 } from "react-icons/bi";
 import { LuBookText,LuSmartphone,LuPalette,LuMegaphone,LuShieldCheck,LuBrainCircuit,LuDatabase } from "react-icons/lu";
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Course = () => {
  const navigate = useNavigate()
