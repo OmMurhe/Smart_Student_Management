@@ -21,7 +21,6 @@ const ArtificialIntelligence = () => {
     <div className='bg-gradient-to-r from-[#2d1db8] to-[#6c3cff] w-full h-90 flex flex-row'>
          <div className=' flex flex-col w-[55%]'>
            <div className='flex text-white text-sm gap-4 ml-24 font-semibold mt-5 '>
-             <span className='mt-1'><FaHouse /></span>
              <a>Home</a>
              <span className='mt-1'><IoIosArrowForward /></span>
              <a>Course</a>

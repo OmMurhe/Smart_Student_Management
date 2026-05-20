@@ -16,13 +16,18 @@ import ArtificialIntelligence from './assets/components/course/artificialIntelli
 import CloudComputing from './assets/components/course/cloudComputing'
 import Home from './assets/components/home/Home'
 import SuccessStrories from './assets/components/successStories/successStrories'
+import Footer from './assets/components/footer/Footer'
+import About from './assets/components/aboutUs/About'
+
 const App = () => {
   return (
     <BrowserRouter>
      <Header />
+
     <Routes>
       
       <Route path='/course' element={<Course/>}/>
+      <Route path='/about' element={<About/>}/>
       <Route path='/' element={<Home/>}/>
       <Route path='/successStories' element={<SuccessStrories/>}/>
       <Route path='/course/cloudComputing' element={<CloudComputing/>}/>
@@ -37,6 +42,7 @@ const App = () => {
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/forgetPassward' element={<Forget/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
 
   )
