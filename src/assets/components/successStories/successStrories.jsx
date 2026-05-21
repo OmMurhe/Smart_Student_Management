@@ -77,8 +77,8 @@ const SuccessStrories = () => {
       <div className='mx-20 mt-5'>
         <p className='text-2xl font-bold'>Our Student<span className='text-yellow-400'> Got Placed In</span></p>
         <div className='mt-5 flex gap-5'>
-        <div className='w-112 rounded-2xl  h-72 shadow-[0_4px_20px_rgba(0,0,0,0.20)] flex'>
-          <img src={Student1} alt="Student1" className='w-1/2'/>
+        <div className='w-112 rounded-3xl  h-72 shadow-[0_4px_20px_rgba(0,0,0,0.20)] flex'>
+          <img src={Student1} alt="Student1" className='w-1/2 rounded-2xl'/>
           <div className='px-8 py-4 flex flex-col '>
          <p className='bg-indigo-600  text-white font-bold text-sm rounded-r-2xl px-2 w-28'>I Got Placed</p>
          <p className='font-semibold text-lg'>Om Murhe</p>
@@ -97,7 +97,7 @@ const SuccessStrories = () => {
 
  {/*card 2*/}
            <div className='w-112 rounded-2xl  shadow-[0_4px_20px_rgba(0,0,0,0.20)] flex h-72'>
-          <img src={Student2} alt="Student2" className='w-1/2'/>
+          <img src={Student2} alt="Student2" className='w-1/2 rounded-2xl'/>
           <div className=' px-8 py-4 flex flex-col '>
          <p className='bg-indigo-600  text-white font-bold text-sm rounded-r-2xl px-2 w-28'>I Got Placed</p>
          <p className='font-semibold text-lg'>Gaurav Khade</p>
@@ -116,7 +116,7 @@ const SuccessStrories = () => {
 
  {/*card 3*/}
            <div className='w-112 rounded-2xl  shadow-[0_4px_20px_rgba(0,0,0,0.20)] flex h-72'>
-          <img src={Student3} alt="Student3" className='w-1/2'/>
+          <img src={Student3} alt="Student3" className='w-1/2 rounded-2xl'/>
           <div className='px-8 py-4 flex flex-col '>
          <p className='bg-indigo-600  text-white font-bold text-sm rounded-r-2xl px-2 w-28'>I Got Placed</p>
          <p className='font-semibold text-lg'>Manoj Rathod</p>
@@ -137,7 +137,7 @@ const SuccessStrories = () => {
         {/*card 4*/}
         <div className='flex gap-4 mt-5'>
            <div className='w-112 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.20)] flex h-72'>
-          <img src={Student4} alt="Student4" className='w-1/2'/>
+          <img src={Student4} alt="Student4" className='w-1/2 rounded-2xl'/>
           <div className=' px-8 py-4 flex flex-col '>
          <p className='bg-indigo-600  text-white font-bold text-sm rounded-r-2xl px-2 w-28'>I Got Placed</p>
          <p className='font-semibold text-lg'>Ganesh Bhise</p>
@@ -157,7 +157,7 @@ const SuccessStrories = () => {
  {/*card 5*/}
  
            <div className='w-112 rounded-2xl  shadow-[0_4px_20px_rgba(0,0,0,0.20)] flex h-72'>
-          <img src={Student5} alt="Student5" className='w-1/2'/>
+          <img src={Student5} alt="Student5" className='w-1/2 rounded-2xl'/>
           <div className='px-8 py-4 flex flex-col '>
          <p className='bg-indigo-600  text-white font-bold text-sm rounded-r-2xl px-2 w-28'>I Got Placed</p>
          <p className='font-semibold text-lg'>Adity Wankhade</p>
@@ -175,7 +175,7 @@ const SuccessStrories = () => {
 </div>
 {/*card 6*/}
 <div className='w-112 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.20)] flex h-72'>
-          <img src={Student6} alt="Student6" className='w-1/2'/>
+          <img src={Student6} alt="Student6" className='w-1/2 rounded-2xl'/>
           <div className=' px-8 py-4 flex flex-col '>
          <p className='bg-indigo-600  text-white font-bold text-sm rounded-r-2xl px-2 w-28'>I Got Placed</p>
          <p className='font-semibold text-lg'>Neha Wagh</p>

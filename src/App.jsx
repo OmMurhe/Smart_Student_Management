@@ -18,6 +18,7 @@ import Home from './assets/components/home/Home'
 import SuccessStrories from './assets/components/successStories/successStrories'
 import Footer from './assets/components/footer/Footer'
 import About from './assets/components/aboutUs/About'
+import Contact from './assets/components/contact/Contact'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       
       <Route path='/course' element={<Course/>}/>
       <Route path='/about' element={<About/>}/>
+      <Route path='/contact' element={<Contact/>}/>
       <Route path='/' element={<Home/>}/>
       <Route path='/successStories' element={<SuccessStrories/>}/>
       <Route path='/course/cloudComputing' element={<CloudComputing/>}/>
