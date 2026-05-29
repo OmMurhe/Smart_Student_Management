@@ -1,28 +1,12 @@
 import { useState } from 'react';
 import ContactBg from '../../image/contactBg.png'
 import ContactLogo from '../../image/contactLogo.png'
-import { FaPhoneAlt, FaGraduationCap, FaUserTie, FaBookOpen, FaAward, FaStar, FaHeart, FaHandPointRight } from "react-icons/fa";
+import { FaPhoneAlt} from "react-icons/fa";
 import { IoIosArrowForward, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { FiMapPin } from "react-icons/fi";
-import { FaArrowRight, } from "react-icons/fa";
-import { HiCodeBracket } from "react-icons/hi2";
-import { HiUsers } from "react-icons/hi2";
-import { BiBarChartAlt2 } from "react-icons/bi";
-import { LuBookText, LuSmartphone, LuPalette, } from "react-icons/lu";
 import { RiMessage2Line } from "react-icons/ri";
-import { GiDiamondTrophy } from "react-icons/gi";
-import { FaRegIdCard, FaRocket } from "react-icons/fa";
-import { RiHotelLine } from "react-icons/ri";
-import { RiComputerLine } from "react-icons/ri";
-import { useNavigate } from 'react-router-dom';
-import { PiUsersThreeFill } from "react-icons/pi";
-import { SlEnergy } from "react-icons/sl";
 import { MdOutlineAttachEmail } from "react-icons/md";
 import { LiaTelegramPlane } from "react-icons/lia";
-
-
-
-
 
 const Contact = () => {
   const [showAnswer1, setShowAnswer1] = useState(false);

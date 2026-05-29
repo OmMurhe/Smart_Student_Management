@@ -39,7 +39,7 @@ const About = () => {
                     <div className='flex text-white text-sm gap-4 font-semibold mt-5 '>
                         <a>Home</a>
                         <span className='mt-1'><IoIosArrowForward /></span>
-                        <a>Course</a>
+                        <a>About Us</a>
                     </div>
                     <div className='text-white flex justify-center items-center py-2 bg-[#0B0B8F] w-28 rounded-2xl text-base mt-5'>About Us</div>
                     <h1 className='text-5xl text-white font-bold mt-5 leading-tight'>Empowering Learners,</h1>
