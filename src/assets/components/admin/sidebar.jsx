@@ -11,7 +11,7 @@ const Sidebar = () => {
     <img src={Logo} alt="Logo" className='w-40 '/>
     <ul className=' flex justify-center flex-col '>
       <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/dashbord')} > <LayoutDashboard size={18} className='mt-1'/>Dashboard</li>
-      <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/course')} > <Box  size={18} className='mt-1'/>Courses</li>
+      <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/courses')} > <Box  size={18} className='mt-1'/>Courses</li>
       <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/students')} > <Users  size={18} className='mt-1'/>Students</li>
       <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/enrollment')} > <FileCheck size={18} className='mt-1'/>Enrollments</li>
        <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/payment')} > <CreditCard  size={18} className='mt-1'/>Payments</li>

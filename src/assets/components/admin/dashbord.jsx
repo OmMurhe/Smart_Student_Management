@@ -299,7 +299,7 @@ const Dashbord = () => {
               </thead>
 
               <tbody>
-                <tr className='border-b-1  border-[#d6ccbb]'>
+                <tr className='border-b  border-[#d6ccbb]'>
                   <td className='pb-2'>
                     <div className='mt-5 flex gap-4 items-center  '>
                       <img src={Teacher1} alt="Teacher2" className='h-12 w-12 object-cover object-top  rounded-full' />
@@ -314,7 +314,7 @@ const Dashbord = () => {
                   <td><p className='p-2 text-[#10B981] bg-[#86EFAC] rounded-2xl font-semibold'>Active</p></td>
                 </tr>
 
-                <tr className='border-b-1  border-[#d6ccbb] '>
+                <tr className='border-b  border-[#d6ccbb] '>
                   <td className='pb-2'>
                     <div className='mt-5 flex gap-3  items-center'>
                       <img src={Teacher2} alt="Teacher2" className='h-12 w-12 object-cover object-top  rounded-full' />
@@ -330,7 +330,7 @@ const Dashbord = () => {
                 </tr>
 
 
-                <tr className='border-b-1  border-[#d6ccbb] '>
+                <tr className='border-b  border-[#d6ccbb] '>
                   <td className='pb-2'>
                     <div className='mt-5 flex gap-3  items-center '>
                       <img src={Teacher3} alt="Teacher2" className='h-12 w-12 object-cover object-top  rounded-full' />
@@ -370,7 +370,7 @@ const Dashbord = () => {
               <h1 className="text-xl font-bold text-gray-800"> Resents Enrollments </h1>
               <button className="border border-[#63605B] px-4 py-2 rounded-lg text-sm font-medium text-[#6366F1]">View All</button>
             </div>
-            <div className='flex justify-between items-center border-b-1  border-[#d6ccbb] pb-3'>
+            <div className='flex justify-between items-center border-b  border-[#d6ccbb] pb-3'>
               <div className='flex gap-5  items-center mt-5'>
                 <div className='h-12 w-12 flex justify-center items-center bg-[#3B82F6] rounded-xl'><HiCodeBracket className=' font-bold text-3xl text-white' /></div>
                 <div className=''>
@@ -381,7 +381,7 @@ const Dashbord = () => {
               <p className='text-[#63605B]'>10 min ago</p>
             </div>
 
-            <div className='flex justify-between items-center border-b-1  border-[#d6ccbb] pb-3'>
+            <div className='flex justify-between items-center border-b  border-[#d6ccbb] pb-3'>
               <div className='flex gap-5  items-center mt-5'>
                 <div className='h-12 w-12 flex justify-center items-center bg-[#6366F1] rounded-xl'><LuDatabase className=' font-bold text-3xl text-white' /></div>
                 <div className=''>

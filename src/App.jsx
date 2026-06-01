@@ -22,15 +22,21 @@ import Contact from './assets/components/contact/Contact'
 import AdminLayout from './assets/components/admin/adminLayout'
 import Students from './assets/components/admin/students'
 import Dashbord from './assets/components/admin/dashbord'
+import Courses from './assets/components/admin/courses'
+import Payment from './assets/components/admin/payment'
+import Message from './assets/components/admin/message'
+import Enrollments from './assets/components/admin/enrollment'
 
 
 const App = () => { 
   return (
     <BrowserRouter>
-    
-
-    <Routes>
-      <Route path='/admin/students' element={<AdminLayout><Students /></AdminLayout>}/>
+     <Routes>
+      <Route path='/admin/message' element={<AdminLayout><Message/></AdminLayout>}/>
+       <Route path='/admin/enrollment' element={<AdminLayout><Enrollments/></AdminLayout>}/>
+      <Route path='/admin/students' element={<AdminLayout><Students/></AdminLayout>}/>
+      <Route path='/admin/courses' element={<AdminLayout><Courses/></AdminLayout>}/>
+      <Route path='/admin/payment' element={<AdminLayout><Payment/></AdminLayout>}/>
       <Route path='/admin/dashbord' element={<AdminLayout><Dashbord/></AdminLayout>}/>
       <Route path='/course' element={ <><Header /><Course/><Footer/></>}/>
       <Route path='/about' element={<><Header /><About/><Footer/></>}/>
