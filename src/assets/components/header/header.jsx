@@ -2,12 +2,12 @@ import React from 'react'
 import Logo from '../../image/logo.png'
 import { NavLink } from 'react-router-dom'
 
-const header = () => {
+const header = ({ openInquiry }) => {
   return (
     <>
       <div className='h-18 bg-gradient-to-r from-[#6a11cb] to-[#2575fc] w-full flex  items-center'>
         <img src={Logo} alt='Logo' className='h-17 pl-12' />
-        <ul className='flex gap-8 font-bold text-white ml-[40%] '>
+        <ul className='flex gap-8 font-bold text-white ml-[36%]'>
           <NavLink
             to="/">
             <li className='relative group cursor-pointer hover:text-[#0f172a]'><a>Home</a> <span className='absolute left-0 -bottom-1 w-0 h-[3px] bg-yellow-300 transition-all duration-300 group-hover:w-full rounded-full'></span></li>
@@ -33,9 +33,10 @@ const header = () => {
             </li>
           </NavLink>
         </ul>
+         <button className='bg-[#0f172a] px-4 text-white py-2 rounded-4xl ml-8 font-bold hover:text-[#8b5cf6]'  onClick={openInquiry}>Inquiry</button>
         <NavLink
           to="/login">
-          <button className='bg-[#0f172a] px-4 text-white py-2 rounded-4xl ml-32 font-bold hover:text-[#8b5cf6]'>Login</button>
+          <button className='bg-[#0f172a] px-4 text-white py-2 rounded-4xl ml-8 font-bold hover:text-[#8b5cf6]'>Login</button>
         </NavLink>
       </div>
     </>

@@ -1,16 +1,17 @@
 import React from 'react'
 import { IoIosArrowForward } from "react-icons/io";
-import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, CartesianGrid, BarChart, Bar } from "recharts";
+import { ResponsiveContainer, AreaChart, Area} from "recharts";
 import { HiMiniUsers } from "react-icons/hi2";
-import { RiUserAddFill } from "react-icons/ri";
+import { RiUserAddFill,RiDeleteBinLine } from "react-icons/ri";
 import { FaUserXmark, FaUserCheck } from "react-icons/fa6";
 import { FaArrowUp } from "react-icons/fa";
 import { CiSearch, CiFilter } from "react-icons/ci";
 import Teacher2 from '../../image/teacher2.png'
 import { GoDotFill, GoPencil } from "react-icons/go";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
-import { RiDeleteBinLine} from "react-icons/ri";
 import { BiLeftArrowAlt,BiRightArrowAlt  } from "react-icons/bi";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 
 
@@ -26,6 +27,25 @@ const Students = () => {
     { students: 28 },
     { students: 38 },
   ];
+
+  const [students, setStudents] = useState([]);
+
+useEffect(() => {
+  fetchStudents();
+}, []);
+
+const fetchStudents = async () => {
+  try {
+    const response = await axios.get(
+      "http://localhost:8080/students"
+    );
+
+    setStudents(response.data);
+
+  } catch (error) {
+    console.log("Error:", error);
+  }
+};
   return (
     <>
       <div className='p-5 flex items-center justify-between mt-24'>
@@ -184,12 +204,13 @@ const Students = () => {
             </tr>
           </thead>
           <tbody>
+              {students.map((student) => (
             <tr className='border-b  border-[#d6ccbb]'>
               <td className='flex items-center gap-3 my-3'> <img src={Teacher2} alt="Teacher2" className='h-10 w-10 object-cover object-top  rounded-full ' />
-                <p className='font-bold'>Rahul Sharma</p>
+                <p className='font-bold'>{student.name}</p>
               </td>
-              <td>rohitkumar@gmail.com</td>
-              <td>Web Developement</td>
+              <td>{student.email}</td>
+              <td>Web Develope</td>
               <td><span className='inline-flex items-center gap-1 text-[#10B981] px-3 py-1 bg-[#8ad2ba] rounded-xl'><GoDotFill />Active</span></td>
               <td><p className='inline-flex items-center text-[#10B981] px-3 py-1 rounded-xl bg-[#8ad2ba]'>Paid</p></td>
               <td>22 May 2025</td>
@@ -201,70 +222,8 @@ const Students = () => {
                 </div></td>
             </tr>
 
-              <tr className='border-b  border-[#d6ccbb]'>
-              <td className='flex items-center gap-3 my-3'> <img src={Teacher2} alt="Teacher2" className='h-10 w-10 object-cover object-top  rounded-full ' />
-                <p className='font-bold'>Rahul Sharma</p>
-              </td>
-              <td>rohitkumar@gmail.com</td>
-              <td>Web Developement</td>
-              <td><span className='inline-flex items-center gap-1 text-[#10B981] px-3 py-1 bg-[#8ad2ba] rounded-xl'><GoDotFill />Active</span></td>
-              <td><p className='inline-flex items-center text-[#10B981] px-3 py-1 rounded-xl bg-[#8ad2ba]'>Paid</p></td>
-              <td>22 May 2025</td>
-              <td>
-                <div className='flex gap-3 '>
-                  <span className='border-2 p-1 rounded-lg border-[#e4dfdf] text-[#1d20db]'><MdOutlineRemoveRedEye size={20}/></span>
-                  <span className='border-2 p-1 rounded-lg border-[#e4dfdf] text-[#1d20db]'><GoPencil size={20} /></span>
-                  <span  className='border-2 p-1 rounded-lg border-[#e4dfdf] text-red-600'><RiDeleteBinLine size={20} /></span>
-                </div></td>
-            </tr>
-             <tr className='border-b  border-[#d6ccbb]'>
-              <td className='flex items-center gap-3 my-3'> <img src={Teacher2} alt="Teacher2" className='h-10 w-10 object-cover object-top  rounded-full ' />
-                <p className='font-bold'>Rahul Sharma</p>
-              </td>
-              <td>rohitkumar@gmail.com</td>
-              <td>Web Developement</td>
-              <td><span className='inline-flex items-center gap-1 text-[#10B981] px-3 py-1 bg-[#8ad2ba] rounded-xl'><GoDotFill />Active</span></td>
-              <td><p className='inline-flex items-center text-yellow-600 px-3 py-1 rounded-xl bg-[#d2c68a]'>Pending</p></td>
-              <td>22 May 2025</td>
-              <td>
-                <div className='flex gap-3 '>
-                  <span className='border-2 p-1 rounded-lg border-[#e4dfdf] text-[#1d20db]'><MdOutlineRemoveRedEye size={20}/></span>
-                  <span className='border-2 p-1 rounded-lg border-[#e4dfdf] text-[#1d20db]'><GoPencil size={20} /></span>
-                  <span  className='border-2 p-1 rounded-lg border-[#e4dfdf] text-red-600'><RiDeleteBinLine size={20} /></span>
-                </div></td>
-            </tr>
-             <tr className='border-b  border-[#d6ccbb]'>
-              <td className='flex items-center gap-3 my-3'> <img src={Teacher2} alt="Teacher2" className='h-10 w-10 object-cover object-top  rounded-full ' />
-                <p className='font-bold'>Rahul Sharma</p>
-              </td>
-              <td>rohitkumar@gmail.com</td>
-              <td>Web Developement</td>
-              <td><span className='inline-flex items-center gap-1 text-[#10B981] px-3 py-1 bg-[#8ad2ba] rounded-xl'><GoDotFill />Active</span></td>
-              <td><p className='inline-flex items-center text-[#10B981] px-3 py-1 rounded-xl bg-[#8ad2ba]'>Paid</p></td>
-              <td>22 May 2025</td>
-              <td>
-                <div className='flex gap-3 '>
-                  <span className='border-2 p-1 rounded-lg border-[#e4dfdf] text-[#1d20db]'><MdOutlineRemoveRedEye size={20}/></span>
-                  <span className='border-2 p-1 rounded-lg border-[#e4dfdf] text-[#1d20db]'><GoPencil size={20} /></span>
-                  <span  className='border-2 p-1 rounded-lg border-[#e4dfdf] text-red-600'><RiDeleteBinLine size={20} /></span>
-                </div></td>
-            </tr>
-             <tr className='border-b  border-[#d6ccbb]'>
-              <td className='flex items-center gap-3 my-3'> <img src={Teacher2} alt="Teacher2" className='h-10 w-10 object-cover object-top  rounded-full ' />
-                <p className='font-bold'>Rahul Sharma</p>
-              </td>
-              <td className='py-3'>rohitkumar@gmail.com</td>
-              <td className='py-3'>Web Developement</td>
-              <td><span className='inline-flex items-center gap-1 text-red-600 px-3 py-1 bg-[#d28a8a] rounded-xl my-3'><GoDotFill />Inactive</span></td>
-              <td><p className='inline-flex items-center text-[#10B981] px-3 py-1 rounded-xl bg-[#8ad2ba]'>Paid</p></td>
-              <td>22 May 2025</td>
-              <td>
-                <div className='flex gap-3'>
-                  <span className='border-2 p-1 rounded-lg border-[#e4dfdf] text-[#1d20db]'><MdOutlineRemoveRedEye size={20}/></span>
-                  <span className='border-2 p-1 rounded-lg border-[#e4dfdf] text-[#1d20db]'><GoPencil size={20} /></span>
-                  <span  className='border-2 p-1 rounded-lg border-[#e4dfdf] text-red-600'><RiDeleteBinLine size={20} /></span>
-                </div></td>
-            </tr>
+              
+              ))}
              </tbody>
         </table>
 
