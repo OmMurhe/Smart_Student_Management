@@ -24,11 +24,11 @@ import Students from './assets/components/admin/students'
 import Dashbord from './assets/components/admin/dashbord'
 import Courses from './assets/components/admin/courses'
 import Payment from './assets/components/admin/payment'
-import Message from './assets/components/admin/message'
+import Inquiry  from './assets/components/admin/inquiry'
 import Enrollments from './assets/components/admin/enrollment'
 import SucessStories from './assets/components/admin/sucessStrories'
 import Analytics from './assets/components/admin/analytics'
-import Inquiry from './assets/components/inquiry/InquiryFrom'
+
 
 const AppContent = ({
   setShowInquiryPopup,
@@ -60,7 +60,7 @@ const AppContent = ({
 
     
      <Routes>
-      <Route path='/admin/message' element={<AdminLayout><Message/></AdminLayout>}/>
+      <Route path='/admin/inquiry' element={<AdminLayout><Inquiry/></AdminLayout>}/>
        <Route path='/admin/analytics' element={<AdminLayout><Analytics/></AdminLayout>}/>
        <Route path='/admin/successStories' element={<AdminLayout><SucessStories/></AdminLayout>}/>
        <Route path='/admin/enrollment' element={<AdminLayout><Enrollments/></AdminLayout>}/>
@@ -72,7 +72,6 @@ const AppContent = ({
       <Route path='/about' element={<><About/><Footer/></>}/>
       <Route path='/contact' element={<><Contact/><Footer/></>}/>
       <Route path='/' element={<><Home/><Footer/></>}/>
-      <Route path='/inquiry' element={<Inquiry/>}/>
       <Route path='/successStories' element={<><SuccessStrories/><Footer/></>}/>
       <Route path='/course/cloudComputing' element={<><CloudComputing/><Footer/></>}/>
       <Route path='/course/artificialIntelligence' element={<><ArtificialIntelligence/><Footer/></>}/>

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { IoIosArrowForward } from "react-icons/io";
 import { ResponsiveContainer, AreaChart, Area} from "recharts";
 import { HiMiniUsers } from "react-icons/hi2";
@@ -12,9 +12,6 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { BiLeftArrowAlt,BiRightArrowAlt  } from "react-icons/bi";
 import { useState, useEffect } from "react";
 import axios from "axios";
-
-
-
 
 const Students = () => {
   const data = [

@@ -23,7 +23,7 @@ const Navbar = () => {
    <p className='font-bold '>Om Murhe</p>
    <p>Super Admin</p>
   </div> 
-  <spam><ChevronDown/></spam>
+  <span><ChevronDown/></span>
   </div>
   </div>
 

@@ -15,7 +15,7 @@ const Sidebar = () => {
       <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/students')} > <Users  size={18} className='mt-1'/>Students</li>
       <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/enrollment')} > <FileCheck size={18} className='mt-1'/>Enrollments</li>
        <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/payment')} > <CreditCard  size={18} className='mt-1'/>Payments</li>
-      <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/message')} > <Mail  size={18} className='mt-1'/>Messages</li>
+      <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/inquiry')} > <Mail  size={18} className='mt-1'/>Inquiry</li>
       <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/successStories')} > <Star  size={18} className='mt-1'/>success Stories</li>
       <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/analytics')} > <ChartNoAxesColumnIncreasing size={18} className='mt-1'/>Analytics</li>
        <li className='flex gap-3  w-40 hover:bg-indigo-600 p-3 rounded-2xl'onClick={()=>navigate('/admin/setting')} > <Settings   size={18} className='mt-1'/>Setting</li>
